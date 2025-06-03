@@ -1,0 +1,42 @@
+# macOS Persistence Scanner Configuration
+
+[scan]
+# Run scanners in parallel (default: true)
+parallel = true
+
+# Timeout for each scanner in seconds (default: 30)
+timeout = 30
+
+[output]
+# Default output format: table, json, sarif (default: table)
+format = "table"
+
+# Pretty print JSON output (default: true)
+pretty_json = true
+
+[exclude]
+# Paths to exclude from scanning
+paths = [
+    "/System/Library/LaunchAgents/com.apple.*",
+    "/System/Library/LaunchDaemons/com.apple.*"
+]
+
+# Labels to exclude from results
+labels = [
+    "com.apple.Safari",
+    "com.apple.Mail"
+]
+
+[heuristics]
+# Enable/disable specific heuristics
+signature_verification = true
+suspicious_path = true
+suspicious_behavior = true
+name_entropy = true
+
+# Custom risk score thresholds
+[risk_thresholds]
+critical = 0.8
+high = 0.6
+medium = 0.4
+low = 0.2
