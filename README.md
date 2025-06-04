@@ -49,16 +49,14 @@ Flags:
 
 ## Persistence Mechanisms Scanned
 
-Currently supports:
-- LaunchAgents (user and system)
-- LaunchDaemons
-
-Coming soon:
-- Login Items
-- Configuration Profiles
-- Cron Jobs
-- Periodic Scripts
-- Login/Logout Hooks
+Comprehensive coverage of all major macOS persistence mechanisms:
+- **LaunchAgents** (user and system)
+- **LaunchDaemons**
+- **Login Items** (user preferences, shared file lists, System Events)
+- **Configuration Profiles** (MDM profiles, managed preferences)
+- **Cron Jobs** (system crontab, user crontabs, cron.d)
+- **Periodic Scripts** (daily/weekly/monthly scripts, periodic.conf)
+- **Login/Logout Hooks** (system and user hooks)
 
 ## Risk Assessment
 
